@@ -1,0 +1,52 @@
+﻿
+@model UNFHackathonManagementSystem.Models.Competition
+@{ 
+    ViewData["Title"] = "Create";
+}
+
+<br />
+<h1>Create Competition</h1>
+<hr />
+
+<form>
+    <div class="container">
+        <div class="form-group">
+            <div class="col-sm-1">
+                <b><label asp-for="Name"></label></b>
+            </div>
+            <div class="col-sm-4">
+                <input asp-for="Name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                <b><label asp-for="Type"></label></b>
+            </div>
+            <div class="col-sm-4">
+                <input asp-for="Type" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                <b><label asp-for="StartDate"></label></b>
+            </div>
+            <div class="col-sm-4">
+                <input asp-for="StartDate" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                <b><label asp-for="EndDate" style="text-"></label></b>
+            </div>
+            <div class="col-sm-4">
+                <input asp-for="EndDate" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+         <div class="col-lg-7">
+                <b><label asp-for="Description"></label></b>
+                <textarea rows="8" cols="20" asp-for="Description" class="form-control"></textarea>
+            </div>
+        </div>
+</form>
+
